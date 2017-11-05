@@ -1,4 +1,4 @@
-TARGETS=basic
+TARGETS=basic csg
 OUTPUTS=$(addsuffix .png, $(TARGETS))
 
 all: $(TARGETS)
