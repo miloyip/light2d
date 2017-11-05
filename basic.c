@@ -44,5 +44,5 @@ int main() {
     for (int y = 0; y < H; y++)
         for (int x = 0; x < W; x++, p += 3)
             p[0] = p[1] = p[2] = (int)(fminf(sample((float)x / W, (float)y / H) * 255.0f, 255.0f));
-    svpng(fopen("test1.png", "wb"), W, H, img, 0);
+    svpng(fopen("basic.png", "wb"), W, H, img, 0);
 }
