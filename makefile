@@ -1,4 +1,4 @@
-TARGETS=test1
+TARGETS=basic
 OUTPUTS=$(addsuffix .png, $(TARGETS))
 
 all: $(TARGETS)
