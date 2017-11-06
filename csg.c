@@ -30,13 +30,9 @@ Result intersectOp(Result a, Result b) {
 }
 
 Result subtractOp(Result a, Result b) {
-    if (a.sd > -b.sd)
-        return a;
-    else {
-        Result r = a;
-        r.sd = -b.sd;
-        return r;
-    }
+    Result r = a;
+    r.sd = (a.sd > -b.sd) ? a.sd : -b.sd;
+    return r;
 }
 
 Result complementOp(Result a) {
