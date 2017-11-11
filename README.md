@@ -42,3 +42,13 @@ Use union operation for creating multiple shapes:
 Various CSG operations on two circles:
 
 ![ ](csg_ops.png)
+
+# Shapes
+
+Source code: [shapes.c](shapes.c)
+
+Examples of various shapes defined by SDF:
+
+![ ](shapes.png)
+
+![ ](m.png)
