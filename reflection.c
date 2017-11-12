@@ -29,8 +29,8 @@ float boxSDF(float x, float y, float cx, float cy, float theta, float sx, float 
     return fminf(fmaxf(dx, dy), 0.0f) + sqrtf(ax * ax + ay * ay);
 }
 
-float planeSDF(float x, float y, float nx, float ny, float d) {
-    return x * nx + y * ny + d;
+float planeSDF(float x, float y, float px, float py, float nx, float ny) {
+    return (x - px) * nx + (y - py) * ny;
 }
 
 Result unionOp(Result a, Result b) {
@@ -48,11 +48,11 @@ Result subtractOp(Result a, Result b) {
 }
 
 Result scene(float x, float y) {
-    Result a = { circleSDF(x, y, 0.4f,  0.2f, 0.1f), 2.0f, 0.0f };
-    Result b = {    boxSDF(x, y, 0.5f,  0.8f, TWO_PI / 16.0f, 0.1f, 0.1f), 0.0f, 0.9f };
-    Result c = {    boxSDF(x, y, 0.8f,  0.5f, TWO_PI / 16.0f, 0.1f, 0.1f), 0.0f, 0.9f };
-    Result d = {  planeSDF(x, y, 0.0f, -1.0f, 0.5f), 0.0f, 0.9f };
-    Result e = { circleSDF(x, y, 0.5f,  0.5f, 0.4f), 0.0f, 0.9f };
+    Result a = { circleSDF(x, y, 0.4f, 0.2f, 0.1f), 2.0f, 0.0f };
+    Result b = {    boxSDF(x, y, 0.5f, 0.8f, TWO_PI / 16.0f, 0.1f, 0.1f), 0.0f, 0.9f };
+    Result c = {    boxSDF(x, y, 0.8f, 0.5f, TWO_PI / 16.0f, 0.1f, 0.1f), 0.0f, 0.9f };
+    Result d = {  planeSDF(x, y, 0.0f, 0.5f, 0.0f, -1.0f), 0.0f, 0.9f };
+    Result e = { circleSDF(x, y, 0.5f, 0.5f, 0.4f), 0.0f, 0.9f };
     // return unionOp(unionOp(a, b), c);
     return unionOp(a, subtractOp(d, e));
 }
