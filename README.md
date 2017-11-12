@@ -52,3 +52,23 @@ Examples of various shapes defined by SDF:
 ![ ](shapes.png)
 
 ![ ](m.png)
+
+# Reflection
+
+Source code: [reflection.c](reflection.c)
+
+Test scene with two boxes:
+
+![ ](reflection_boxscene.png)
+
+Visualization of SDF gradient, which is approximated by central difference:
+
+![ ](reflection_boxgradient.png)
+
+Reflection via recursive tracing:
+
+![ ](reflection_box.png)
+
+Concave mirror scene generates caustics effect:
+
+![ ](reflection_concavemirror.png)

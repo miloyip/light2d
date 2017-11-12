@@ -1,4 +1,4 @@
-TARGETS=basic csg shapes
+TARGETS=basic csg shapes reflection
 OUTPUTS=$(addsuffix .png, $(TARGETS))
 TEXFILES=$(basename $(wildcard *.tex))
 DIAGRAMS=$(addsuffix .png, $(TEXFILES))
@@ -15,7 +15,7 @@ diagram: $(DIAGRAMS)
 
 %.png: %.tex
 	xelatex $<
-	convert $(basename $<).pdf $(basename $<).png
+	convert -density 150 $(basename $<).pdf $(basename $<).png
 	rm $(basename $<).aux $(basename $<).log $(basename $<).pdf
 
 clean:
