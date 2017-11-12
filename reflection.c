@@ -3,12 +3,9 @@
 #include <stdlib.h> // rand(), RAND_MAX
 
 #define TWO_PI 6.28318530718f
-// #define W 512
-// #define H 512
-// #define N 64
-#define W 1024
-#define H 1024
-#define N 256
+#define W 512
+#define H 512
+#define N 64
 #define MAX_STEP 64
 #define MAX_DISTANCE 5.0f
 #define EPSILON 1e-6f
