@@ -57,6 +57,8 @@ Examples of various shapes defined by SDF:
 
 Source code: [reflection.c](reflection.c)
 
+![ ](vector_reflect.png)
+
 Test scene with two boxes:
 
 ![ ](reflection_boxscene.png)
@@ -72,3 +74,23 @@ Reflection via recursive tracing:
 Concave mirror scene generates caustics effect:
 
 ![ ](reflection_concavemirror.png)
+
+# Refraction
+
+Source code: [refraction.c](refraction.c)
+
+Applying Snell's law to compute refraction direction. Total internal reflection is also handled.
+
+![ ](vector_refract.png)
+
+Test scenes:
+
+![ ](refraction_box.png)
+
+![ ](refraction_concavelens.png)
+
+![ ](refraction_convexlens.png)
+
+![ ](refraction_semicircular.png)
+
+![ ](m2.png)
