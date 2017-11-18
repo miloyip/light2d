@@ -1,4 +1,4 @@
-TARGETS=basic csg shapes reflection
+TARGETS=basic csg shapes reflection refraction
 OUTPUTS=$(addsuffix .png, $(TARGETS))
 TEXFILES=$(basename $(wildcard *.tex))
 DIAGRAMS=$(addsuffix .png, $(TEXFILES))
