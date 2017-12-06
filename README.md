@@ -94,3 +94,19 @@ Test scenes:
 ![ ](refraction_semicircular.png)
 
 ![ ](m2.png)
+
+# Fresnel Reflectance
+
+Source code: [refraction.c](refraction.c)
+
+Applying Fresnel Equation to compute reflectance of dielectric medium.
+
+![ ](vector_fresnel.png)
+
+Without Fresnel:
+
+![ ](refraction_montage.png)
+
+With Fresnel term:
+
+![ ](fresnel_montage.png)
