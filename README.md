@@ -97,7 +97,7 @@ Test scenes:
 
 # Fresnel Reflectance
 
-Source code: [refraction.c](refraction.c)
+Source code: [fresnel.c](fresnel.c)
 
 Applying Fresnel Equation to compute reflectance of dielectric medium.
 
