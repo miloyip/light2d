@@ -172,8 +172,6 @@ int main() {
 }
 #else
 int main() {
-    float a = TWO_PI * 0.73f;
-    printf("%f", trace(0.6f, 0.6f, cosf(a), sinf(a), 0));
     unsigned char* p = img;
     for (int y = 0; y < H; y++)
         for (int x = 0; x < W; x++, p += 3)
