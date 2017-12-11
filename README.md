@@ -99,7 +99,7 @@ Test scenes:
 
 Source code: [fresnel.c](fresnel.c)
 
-Applying Fresnel Equation to compute reflectance of dielectric medium.
+Applying Fresnel equation to compute reflectance of dielectric medium.
 
 ![ ](vector_fresnel.png)
 
@@ -110,3 +110,15 @@ Without Fresnel:
 With Fresnel term:
 
 ![ ](fresnel_montage.png)
+
+# Beer-Lambert
+
+Source code: [beerlambert.c](beerlambert.c) [beerlambert_color.c](beerlambert_color.c)
+
+Applying Beer-Lambert law to simulate absorption of light in medimum.
+
+![ ](beerlambert_montage.png)
+
+![ ](beerlambert_color.png)
+
+![ ](heart.png)

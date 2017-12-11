@@ -1,4 +1,4 @@
-TARGETS=basic csg shapes reflection refraction fresnel
+TARGETS=basic csg shapes reflection refraction fresnel beerlambert beerlambert_color heart
 OUTPUTS=$(addsuffix .png, $(TARGETS))
 TEXFILES=$(basename $(wildcard *.tex))
 DIAGRAMS=$(addsuffix .png, $(TEXFILES))
